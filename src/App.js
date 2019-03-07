@@ -5,12 +5,28 @@ import PokemonList from './components/PokemonList';
 import './App.css';
 
 class App extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      dataPokemon: createPromise(),
+      input: "",
+    }
+  }
+
+  // componentDidMount(){
+  //   this.setState({
+  //     dataPokemon: createPromise()
+  //   }
+  //   //.then(data => console.log(data));
+  // )
+  // }
+
+
   render() {
-    createPromise();
     return (
       <div>
-        <Header></Header>
-        <PokemonList></PokemonList>
+        <Header/>
+        <PokemonList/>
       </div>
     );
   }
