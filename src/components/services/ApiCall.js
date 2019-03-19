@@ -16,8 +16,8 @@ const createPromise = () => {
             dataRawOnePokemon.id = data.id;
             dataRawOnePokemon.types = data.types;
             dataRawOnePokemon.image = data.sprites.front_default;
+            dataRawAllPokemon.push(dataRawOnePokemon);
         })
-        dataRawAllPokemon.push(dataRawOnePokemon);
     }
     return dataRawAllPokemon;
 }

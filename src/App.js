@@ -26,7 +26,7 @@ class App extends Component {
     return (
       <div>
         <Header/>
-        <PokemonList/>
+        <PokemonList dataPokemon = {this.state.dataPokemon}/>
       </div>
     );
   }
